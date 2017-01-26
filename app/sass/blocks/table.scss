@@ -1,0 +1,123 @@
+.table {
+  @include absolute-center;
+  // position: relative;
+  z-index: 70;
+  width: 244px;
+  height: 118px;
+  border-radius: 150px;
+}
+.table__wrap {
+  position: relative;
+  width: 242px;
+  min-height: 118px;
+  text-align: center;
+  background-color: #5bae58;
+  background-image: url("../img/bg/bg2.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 150px;
+  box-shadow: 0 8px 13px rgba(41, 27, 14, 0.97);
+  &::before {
+    content: "";
+    position: absolute;
+    top: -54px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 69px;
+    height: 84px;
+    background-image: url("../img/content/croupier.png");
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+}
+.table__number {
+  display: block;
+  margin: 0 auto;
+  padding-top: 14px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 1;
+  color: $light-1;
+  font-weight: 700;
+}
+.table_list {
+  @include ul-reset();
+  font-size: 0;
+}
+.table__item {
+  position: relative;
+  @extend %clearfix;
+  display: inline-block;
+  vertical-align: top;
+  width: 28px;
+  height: 43px;
+  margin-right: 3px;
+  font-size: 16px;
+  background-color: rgba(255,255,255, 1);
+  z-index: 10;
+  overflow: hidden;
+}
+.table__item-left {
+  float: left;
+  width: 43%;
+}
+.table__item-number {
+  color: $dark-1;
+  margin-top: 2px;
+  padding-left: 4px;
+  font-size: 13px;
+  line-height: 12px;
+}
+.table__item-img-sm {
+  display: block;
+  margin: 0 auto;
+  width: 10px;
+  height: 10px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.table__item-right {
+  float: right;
+  width: 48.5%;
+  padding-left: 8.5%;
+}
+.table__item-img-big {
+  margin-top: 10px;
+  height: 19px;
+  background-repeat: no-repeat;
+
+}
+.table__item-img-bigtwo {
+  position: absolute;
+  bottom: -8px;
+  right: 0;
+  z-index: 30;
+  width: 14px;
+  height: 18px;
+  background-repeat: no-repeat;
+}
+.table__item {
+  &--kresti {
+    .table__item-number {
+      color: $dark-1;
+    }
+    .table__item-img-sm,
+    .table__item-img-big {
+      background-image: url("../img/icons/icon-kresti.png");
+    }
+    .table__item-img-bigtwo {
+      background-image: none;
+      background-color: #fff;
+    }
+  }
+  &--chervi {
+    .table__item-number {
+      color: $red-1;
+    }
+    .table__item-img-sm,
+    .table__item-img-big,
+    .table__item-img-bigtwo {
+      background-image: url("../img/icons/icon-chervi.png");
+    }
+  }
+}

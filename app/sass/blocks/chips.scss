@@ -1,0 +1,164 @@
+.chips {
+  position: absolute;
+  bottom: -56px;
+  left: -50px;
+  background-image: url("../img/decor/bg-shadow.png");
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+}
+.chips__wrapper {
+  position: relative;
+  width: 105px;
+  height: 72px;
+}
+.chip-one {
+  position: absolute;
+  top: 17px;
+  left: 9px;
+  z-index: 10;
+  width: 30px;
+  height: 31px;
+  display: block;
+  border-radius: 50%;
+  background-image: url("../img/content/chip.png");
+  background-repeat: no-repeat;
+  box-shadow: rgba(0, 0, 0, 0.74902) 0px 2px 2px 0px;
+}
+.chip-two {
+  position: absolute;
+  top: 52px;
+  left: 28px;
+  display: inline-block;
+  vertical-align: top;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-image: url("../img/bg/bg3.png");
+  background-repeat: no-repeat;
+  font-size: 9px;
+  line-height: 22px;
+  color: $light-2;
+  z-index: 50;
+}
+.chips__list {
+  @include ul-reset();
+  position: absolute;
+  bottom: 17px;
+  right: 37px;
+  z-index: 30;
+}
+.chips__item {
+  position: relative;
+  @extend %clearfix;
+  display: inline-block;
+  vertical-align: top;
+  width: 28px;
+  height: 43px;
+  font-size: 16px;
+  background-color: rgba(255,255,255, 1);
+  z-index: 10;
+  overflow: hidden;
+  border-radius: 2px;
+  box-shadow: rgba(0, 0, 0, 0.431373) 0px 0px 5px 1px;
+}
+.chips__item-left {
+  float: left;
+  width: 43%;
+}
+.chips__item-number {
+  color: $dark-1;
+  margin-top: 4px;
+  font-size: 12px;
+  line-height: 12px;
+}
+.chips__item-img-sm {
+  display: block;
+  margin: 0 auto;
+  width: 10px;
+  height: 10px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.chips__item-right {
+  float: right;
+  width: 48.5%;
+  padding-left: 8.5%;
+}
+.chips__item-img-big {
+  margin-top: 10px;
+  height: 19px;
+  background-repeat: no-repeat;
+
+}
+.chips__item-img-bigtwo {
+  position: absolute;
+  bottom: -8px;
+  right: 0;
+  z-index: 30;
+  width: 14px;
+  height: 18px;
+  background-repeat: no-repeat;
+}
+.chips__item {
+  &--kresti {
+    position: absolute;
+    left: 24px;
+    bottom: 0px;
+    z-index: 30;
+    transform: rotate(16deg);
+    .chips__item-number {
+      color: $dark-1;
+    }
+    .chips__item-img-sm,
+    .chips__item-img-big {
+      background-image: url("../img/icons/icon-kresti.png");
+    }
+    .chips__item-img-bigtwo {
+      background-image: none;
+      background-color: #fff;
+    }
+  }
+  &--chervi {
+    // position: absolute;
+    // right: 5px;
+    transform: rotate(-5deg);
+    .chips__item-number {
+      color: $red-1;
+    }
+    .chips__item-img-sm,
+    .chips__item-img-big,
+    .chips__item-img-bigtwo {
+      background-image: url("../img/icons/icon-chervi.png");
+    }
+  }
+}
+.chips__btn {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+  z-index: 40;
+  display: inline-block;
+  vertical-align: top;
+  width: 48px;
+  color: #fff;
+  font-size: 8px;
+  line-height: 17px;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 3px;
+  background-color: #88c53c;
+  background: linear-gradient(to bottom,  #88c53c 0%,#19780f 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#88c53c', endColorstr='#19780f',GradientType=0 ); /* IE6-9 */
+
+}
+.chips__text {
+  position: absolute;
+  bottom: -10px;
+  left: 49px;
+  font-size: 12px;
+  color: #b32621;
+  font-weight: 700;
+  // background-color:
+}

@@ -1,0 +1,68 @@
+/*Переменные*/
+
+/*Шрифты*/
+$roboto-regular: "RobotoRegular", "Arial", sans-serif;
+$roboto-medium: "RobotoMedium", "Arial", sans-serif;
+$roboto-bold: "RobotoBold", "Arial", sans-serif;
+
+/*Цвета , фон*/
+//shadows, borders, rgba, other
+$shadow-1: 0 5px 7px rgba(63, 50, 36, 0.94);
+$shadow-2: 0 8px 13px rgba(41, 27, 14, 0.97);
+$shadow-3: inset 0 4px 3px rgba(0, 0, 0, 0.36);
+$shadow-4: inset 0 0 5px rgba(17, 80, 18, 0.75);
+$shadow-5: 0 5px 5px rgba(0, 0, 0, 0.43);
+$shadow-6: 0 3px 2px rgba(0, 0, 0, 0.75);
+$border-1: 1px solid rgba(113, 99, 69, 0.32);
+
+
+$light-1: rgba(255,255,255, .62);
+$light-2: #ecf0f1;
+$light-3: #eaf9ee;
+
+$dark-1: #171717;
+$red-1: #b32621;
+$red-2: #da3a0a;
+
+//background-colors:
+$bg-1: #fff;
+$bg-2: rgba(51, 141, 51, .48);
+$bg-3: #5bae58;
+$bg-4: #01bf25;
+
+
+/*размер шрифта*/
+$font-size-base: 16px;
+$lin-height-base: 26px/$font-size-base;
+
+/*брейкпоинты*/
+/*Mobile*/
+$desktop-point-widths: "(min-width: 1200px)";
+$laptop-point-widths: "(min-width: 868px)";
+$tablet-point-widths: "(min-width: 520px)";
+/*Desktop*/
+$desktop-point-widths-des: "(max-width: 1200px)";
+$laptop-point-widths-des: "(max-width: 992px)";
+$tablet-point-widths-des: "(max-width: 768px)";
+$phone-point-widths-des: "(max-width: 520px)";
+
+/*макс-ширина на устройствах*/
+$desktop-max-widths: 1200px;
+$laptop-max-widths: 992px;
+$tablet-max-widths: 768px;
+$phone-max-widths: 480px;
+
+/*мин-ширина на устройствах*/
+$desktop-min-widths: 1200px;
+$laptop-min-widths: 992px;
+$tablet-min-widths: 768px;
+$phone-min-widths: 480px;
+
+/*ширины контейнера*/
+$desktop-inner-width: 1170px;
+$laptop-inner-widths: 950px;
+$tablet-inner-widths: 740px;
+$phone-inner-widths: 300px;
+
+/*Ретина*/
+$retina: "(min-resolution: 144dpi), (min-resolution: 1.5dppx)";
